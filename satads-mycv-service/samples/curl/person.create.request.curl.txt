@@ -1,0 +1,10 @@
+curl -X POST \
+  http://localhost:3000/v1/person \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: defb2312-3d2e-d5b3-5df4-8426a0eff5f2' \
+  -d '{
+  "firstName": "João",
+  "lastName": "Silva",
+  "email": "joao.silva@teste.com"
+}'

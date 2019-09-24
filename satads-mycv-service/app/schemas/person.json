@@ -1,0 +1,29 @@
+{
+  "uuid": {
+    "S": null
+  },
+  "firstName": {
+    "S": null
+  },
+  "lastName": {
+    "S": null
+  },
+  "email": {
+    "S": null
+  },
+  "active": {
+    "N": "1"
+  },
+  "deleted": {
+    "N": "0"
+  },
+  "createdAt": {
+    "S": "new Date().toISOString()"
+  },
+  "updatedAt": {
+    "S": null
+  },
+  "deletedAt": {
+    "S": null
+  }
+}

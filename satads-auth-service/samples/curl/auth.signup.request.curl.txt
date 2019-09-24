@@ -1,0 +1,14 @@
+curl -X POST \
+  http://localhost:2000/v1/auth/signup \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 2f75d7c6-9169-74f7-dc73-eb3352582939' \
+  -d '{
+  "username": "joao.silva",
+  "firstName": "João",
+  "lastName": "Silva",
+  "email": "joao.silva@teste.com",
+  "password": "123456",
+  "gid": "",
+  "imageUrl": ""
+}'

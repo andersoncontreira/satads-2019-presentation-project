@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SATADS - MyCv - Login</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="login-page" class="">
+  <section class="p-3 p-lg-5 align-items-center" id="login">
+
+    <section class="w-100  p-lg-5">
+      <h1 class="mb-0">SATADS
+        <span class="text-primary">MyCV</span>
+      </h1>
+      <div class="subheading mb-5">Welcome to your online curriculum</div>
+    </section>
+
+    <section class="w-100  p-lg-5" id="logreg-forms">
+      <form class="form-signin" v-bind:class="{show:showSignInClass, hide: !showSignInClass}">
+        <h2 class="mb-3 font-weight-normal" style="text-align: center"> Sign in</h2>
+<!--        <div class="social-login">-->
+<!--          <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>-->
+<!--          <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>-->
+<!--        </div>-->
+        <div id="site-login" class="pt-2">
+          <input type="email" id="email" name="email" v-model="email" class="form-control" placeholder="Email address" required="" autofocus="" />
+          <input type="password" id="password" name="password" v-model="password" class="form-control" placeholder="Password" required="" />
+
+          <button class="btn btn-success btn-block" type="submit" v-on:click="signIn($event)">
+            <i class="fas fa-sign-in-alt"></i> Sign in</button>
+        </div>
+        <a href="#" id="forgot_pswd">Forgot password?</a>
+        <hr>
+        <button class="btn btn-primary btn-block" type="button" id="btn-signup" v-on:click="showSignUpForm($event)">
+          <i class="fas fa-user-plus"></i> Sign up New Account</button>
+      </form>
+
+      <form action="#" class="form-reset">
+        <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="" />
+        <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
+        <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+      </form>
+
+      <form action="#" class="form-signup" v-bind:class="{show:showSignUpClass, hide: !showSignUpClass}">
+        <h2 class="mb-3 font-weight-normal" style="text-align: center"> Sign Up</h2>
+<!--        <div class="social-login">-->
+<!--          <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>-->
+<!--          <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>-->
+<!--        </div>-->
+
+        <input type="text" id="first-name" v-model="firstName" class="form-control" placeholder="First name" required="" autofocus="" />
+        <input type="text" id="last-name" v-model="lastName" class="form-control" placeholder="Last name" required="" autofocus="" />
+        <input type="email" id="user-email" v-model="email" class="form-control" placeholder="Email address" required autofocus="" />
+        <input type="password" id="user-pass" v-model="password" class="form-control" placeholder="Password" required autofocus="" />
+        <input type="password" id="user-repeatpass" v-model="repeatPassword" class="form-control" placeholder="Repeat Password" required autofocus="" />
+
+        <button class="btn btn-primary btn-block" type="submit" v-on:click="signUp($event)"><i class="fas fa-user-plus"></i> Sign Up</button>
+        <a href="#" id="cancel_signup" v-on:click="showSignInForm($event)"><i class="fas fa-angle-left"></i> Back</a>
+      </form>
+    </section>
+
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/vendor/vue/vue.js"></script>
+  <script src="/vendor/sweetalert2/sweetalert2.min.js"></script>
+  <script src="/js/login.js"></script>
+
+</body>
+
+</html>

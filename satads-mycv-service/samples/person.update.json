@@ -1,0 +1,11 @@
+{
+  "uuid": "",
+  "firstName": "João",
+  "lastName": "Silva",
+  "email": "joao.silva@teste.com",
+  "active": 1,
+  "deleted": 0,
+  "createdAt": null,
+  "updatedAt": null,
+  "deletedAt": null
+}

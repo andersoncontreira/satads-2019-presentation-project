@@ -1,0 +1,5 @@
+curl -X GET \
+  http://localhost:3000/v1/person \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: a0e5709a-3bd8-a041-e2ef-3d5c3760cd0f'
