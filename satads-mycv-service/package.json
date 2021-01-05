@@ -15,7 +15,7 @@
   "dependencies": {
     "aws-sdk": "^2.233.1",
     "aws-serverless-express": "^3.3.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.2",
     "dotenv": "^8.1.0",
     "express": "^4.16.2",
